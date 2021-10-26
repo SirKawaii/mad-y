@@ -1,7 +1,7 @@
 # mad-y discord bot
 
 import os
-import request
+import requests
 import discord
 import json
 
@@ -14,7 +14,7 @@ client = discord.client()
 prefix = "!mdy"
 
 # messages
-WELCOME_MESSAGE = "Hola! aun"
+WELCOME_MESSAGE = "Hola! pronto volveremos a encontrarnos."
 
 # program
 
