@@ -1,6 +1,12 @@
 # mad-y
 
-## how to reploy 
+## testing testing 
+
+pip install -r requirements.txt
+add the DISCORD_TOKEN value to your env vars.
+and run mad-y
+
+## how to Deploy 
 
 ` docker build -t mad-y:0.1
 
