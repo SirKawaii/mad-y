@@ -9,7 +9,7 @@ from discord.ext import commands
 
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-client = discord.client()
+client = discord.Client()
 
 prefix = "!mdy"
 
