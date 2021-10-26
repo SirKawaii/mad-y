@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 COPY app/ .
 
-CMD [ "python", "./miyu.py"]
+CMD [ "python", "./mad-y.py"]

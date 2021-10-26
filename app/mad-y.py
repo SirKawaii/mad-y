@@ -25,7 +25,7 @@ async def on_message(message):
 
     if message.content.startswith(prefix):
         command = message.content.replace(prefix, '', 1).strip()
-        print(f'command text [{command]]')
+        print(f'command text [{command}]')
 
         if command == '':
             await message.channel.send(WELCOME_MESSAGE)
@@ -34,4 +34,3 @@ async def on_message(message):
             await message.channel.send('que rayos!')
 
 client.run(TOKEN)
-
