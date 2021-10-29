@@ -1,21 +1,45 @@
 # mad-y
 
-## testing testing 
+Currently following this guide https://discordjs.guide/
 
-pip install -r requirements.txt
+app in early development.
+
+next steps:
+
+    - firsts commands
+
+## Libraries
+
+    discord.js
+
+## Installation
+
+``` npm install ```
+
 add the DISCORD_TOKEN value to your env vars.
-and run mad-y
 
-## how to Deploy 
+``` DISCORD_TOKEN=YOURSUPERSECRETTOKEN ```
 
-` docker build -t mad-y:0.1
+## How to Deploy 
 
-create a discord_env file in your home with the next information 
+```docker build -t mad-y:0.1 . ```
 
-DISCORD_TOKEN=YOURSUPERSECRETTOKEN
+create a environment variable in your user system path.
 
-finally run this
+``` $env:USERPROFILE/docker.env ```
 
-` docker run --env-file ~/discord_env --name mady -d mady:0.1
+and add the next environment variable:
+
+``` DISCORD_TOKEN=YOURSUPERSECRETTOKEN ```
+
+finally run this:
+
+build it!
+
+``` docker run --env-file $env:USERPROFILE/docker.env --name mady -d mady:0.1 ```
+
+run it!
+
+``` docker run --name mady -d mady:0.1 ```
 
 

@@ -1,11 +1,11 @@
-FROM python:3.9.1
+FROM node:17
 
-WORKDIR /mad-y
+WORKDIR /mady
 
-COPY requirements.txt .
+COPY app/package*.json ./
 
-RUN pip install -r requirements.txt
+CMD npm install
 
-COPY app/ .
+COPY app/. .
 
-CMD [ "python", "./mad-y.py"]
+CMD [ "node", "index.js"]
